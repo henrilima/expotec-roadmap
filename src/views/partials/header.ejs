@@ -1,0 +1,35 @@
+<header>
+  <a href="/" id="banner">
+    <img src="/assets/logo/dark-logo.png" id="logo" alt="logo" draggable="false">
+    <p class="title">EXPOTEC</p>
+  </a>
+
+  <div class="nav-bar">
+    <div class="linha1"></div>
+    <div class="linha2"></div>
+    <div class="linha3"></div>
+  </div>
+
+  <nav id="list-container"> 
+    <ul>
+      <li><a href="/">Início</a></li>
+      <li><a href="/about">Sobre nós</a></li>
+      <li><a href="/contact">Contato</a></li>
+    </ul>
+
+
+    <div id="theme">
+      <i class="fa-solid fa-moon"></i>
+    </div>
+
+    <% if (user) { %>
+    <a href="/profile" id="profile">
+      <p><%- user.username %></p>
+      <img src="<%- user.avatar %>" alt="Google's user picture">
+    </a>
+    <% } else { %>
+    <a id="sign-in" href="/google">ENTRAR</a>
+    <% } %>
+  </nav>
+
+</header>

@@ -1,0 +1,461 @@
+@import url(./globals.css);
+
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#home #start-fluxogram {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#home #start-fluxogram h1 {
+  font-size: 2.5rem;
+  color: var(--color);
+}
+
+#home #start-fluxogram p {
+  font-size: 1.4rem;
+  color: var(--color);
+  max-width: 62%;
+}
+
+#home #start-fluxogram a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color);
+  background-color: var(--background);
+  border: 1px solid var(--color);
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 2rem;
+  padding: 0.6rem 3rem;
+}
+
+#home #start-fluxogram a:hover {
+  background-color: var(--color);
+  color: var(--background);
+  border: 1px solid var(--color);
+}
+
+#home img {
+  height: 420px;
+  width: 420px;
+}
+
+#teacher-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#teacher-container img {
+  height: 420px;
+  width: 420px;
+}
+
+#teacher-container #invite {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 5rem;
+}
+
+#teacher-container #invite h1 {
+  font-size: 2.5rem;
+  color: var(--color);
+}
+
+#teacher-container #invite p {
+  font-size: 1.4rem;
+  color: var(--color);
+}
+
+#teacher-container #invite a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color);
+  background-color: var(--background);
+  border: 1px solid var(--color);
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 2rem;
+  padding: 0.6rem 3rem;
+}
+
+#teacher-container #invite a:hover {
+  background-color: var(--color);
+  color: var(--background);
+  border: 1px solid var(--color);
+}
+
+#categories {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#categories .enem,
+#categories .ssa {
+  width: 900px;
+  height: 300px;
+  background-color: var(--color);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 2.5rem;
+}
+
+#categories .enem span,
+#categories .ssa span {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  font-weight: 600;
+  color: var(--background);
+}
+
+#categories .enem div,
+#categories .ssa div {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#categories .enem div h1,
+#categories .ssa div h1,
+#categories .enem div p,
+#categories .ssa div p {
+  color: var(--background); 
+}
+
+#categories .ssa div h1,
+#categories .ssa div p{
+  max-width: 95%;
+}
+
+#categories .enem div p{
+  max-width: 95%;
+}
+
+#categories .enem div a,
+#categories .ssa div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background);
+  color: var(--color);
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  width: 12rem;
+}
+
+#categories .enem div a:hover,
+#categories .ssa div a:hover {
+  background-color: var(--color);
+  color: var(--background);
+  border: 1px solid var(--background);
+}
+
+#benefits {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#benefits div {
+  height: 250px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+#benefits div img {
+  width: auto;
+  height: 75px;
+}
+
+#benefits div span h1,
+#benefits div span p {
+  color: var(--color);
+}
+
+#benefits div span h1 {
+  font-size: 1.25rem;
+}
+
+#myDiagramDiv {
+  width: 100% !important;
+  height: 100vh !important;
+}
+
+.materias {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.materias .box {
+  color: var(--background);
+  background-color: var(--color);
+  padding: 0.5rem 1rem;
+}
+
+@media (max-width: 1024px) {
+  #home #start-fluxogram {
+    padding: 0 2.5rem;
+  }
+
+  #home img {
+    width: 375px;
+    height: 375px;
+  }
+
+  #teacher-container img {
+    width: 375px;
+    height: 375px;
+  }
+
+  #teacher-container #invite {
+    padding: 0 1rem;
+  }
+
+  #teacher-container #invite h1 {
+    font-size: 2rem;
+  }
+
+  #teacher-container #invite p {
+    font-size: 1.25rem;
+  }
+
+  #categories .enem,
+  #categories .ssa {
+    width: 700px;
+  }
+
+  #benefits div {
+    width: 200px;
+    height: 200px;
+  }
+
+  #benefits div span h1 {
+    font-size: 1rem;
+  }
+
+  #benefits div span p {
+    font-size: 0.75rem;
+  }
+
+  #categories .ssa div h1,
+  #categories .ssa div p{
+  max-width: 80%;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  #home, #teacher-container {
+    justify-content: center !important;
+    height: 100vh !important;
+  }
+  
+  #home {
+    flex-direction: column;
+  }
+  
+  #teacher-container {
+    flex-direction: column-reverse;
+  }
+
+  #invite {
+    height: auto !;
+  }
+
+  #home #start-fluxogram,
+  #teacher-container #invite {
+    width: 100%;
+    height: 50%;
+  }
+
+  #home #start-fluxogram,
+  #teacher-container {
+    height: auto;
+  }
+
+  #home #start-fluxogram h1,
+  #teacher-container #invite h1 {
+    font-size: 3rem;
+  }
+
+  #home #start-fluxogram p,
+  #teacher-container #invite p {
+    font-size: 1.75rem;
+  }
+
+  #home #start-fluxogram a,
+  #teacher-container #invite a {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+  }
+
+  #home img,
+  #teacher-container img {
+    display: block;
+    width: 300px;
+    height: 300px;
+  }
+
+  #categories {
+    height: 100vh;
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+  }
+
+  #categories .enem,
+  #categories .ssa {
+    height: auto;
+    width: 100%;
+    border-radius: 0%;
+    background-color: var(--background);
+    color: var(--color);
+  }
+
+  #categories .enem span,
+  #categories .ssa span {
+    display: none;
+  }
+
+  #categories .ssa div,
+  #categories .enem div {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2.5rem;
+  }
+
+  #categories .enem div h1,
+  #categories .ssa div h1,
+  #categories .enem div p,
+  #categories .ssa div p {
+    color: var(--color);
+  }
+
+  #categories .enem div h1,
+  #categories .ssa div h1 {
+    font-size: 2rem;
+  }
+
+  #categories .enem div p,
+  #categories .ssa div p {
+    font-size: 1.25rem;
+    margin-top: 2px;
+  }
+
+  #categories .enem div a,
+  #categories .ssa div a {
+    background-color: var(--color);
+    color: var(--background);
+    margin-top: 1rem;
+  }
+
+  #categories .enem div a:hover,
+  #categories .ssa div a:hover {
+    border: 1px solid var(--color);
+    background-color: var(--background);
+    color: var(--color);
+  }
+
+  #benefits {
+    height: 100vh;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  #home #start-fluxogram,
+  #teacher-container #invite {
+    padding: 0 5rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+  #home #start-fluxogram,
+  #teacher-container #invite {
+    padding: 0 3rem;
+    gap: 0.5rem;
+  }
+
+  #home #start-fluxogram h1,
+  #teacher-container #invite h1 {
+    font-size: 2rem;
+  }
+
+  #home #start-fluxogram p,
+  #teacher-container #invite p {
+    font-size: 1rem;
+  }
+
+  #home #start-fluxogram a,
+  #teacher-container #invite a {
+    font-size: 1rem;
+    padding: 0.25rem;
+    width: 75%;
+  }
+
+  #categories .enem div,
+  #categories .ssa div {
+    padding: 0 1rem;
+  }
+
+  #categories .enem div h1,
+  #categories .ssa div h1 {
+    font-size: 1.5rem;
+  }
+
+  #categories .enem div p,
+  #categories .ssa div p {
+    font-size: 1rem;
+  }
+
+}

@@ -1,0 +1,31 @@
+{
+    "name": "expotec",
+    "displayName": "Expotec - ENEM/SSA Roadmap",
+    "version": "1.0.0",
+    "description": "Projeto para a EXPOTEC da Escola Técnica Estadual Antônio Arruda de Farias no ano de 2023.",
+    "main": "./src/app.js",
+    "author": {
+      "name": "Henrique Lima",
+      "email": "henrilima.contactme@gmail.com"
+    },
+    "license": "MIT",
+    "scripts": {
+        "start": "nodemon ./src/app.js"
+    },
+    "dependencies": {
+        "body-parser": "^1.20.2",
+        "connect-session-firebase": "^11.0.0",
+        "ejs": "^3.1.8",
+        "express": "^4.18.2",
+        "express-session": "^1.17.3",
+        "firebase": "8.10.0",
+        "passport": "^0.6.0",
+        "passport-google-oauth20": "^2.0.0",
+        "shorten-firebase.realtime-database": "^2.5.0"
+      },
+      "devDependencies": {
+        "path": "^0.12.7",
+        "nodemon": "^3.0.1",
+        "fs": "^0.0.1-security"
+    }
+}

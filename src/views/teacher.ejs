@@ -1,0 +1,68 @@
+<%- include('partials/head') %>
+<title>EXPOTEC</title>
+<link rel="stylesheet" href="/stylesheet/teacher.css">
+<%- include('partials/close-head') %>
+
+<body>
+  <%- include("partials/header") %>
+
+  <main>
+    <section id="form">
+
+        <form action="post">
+      
+       <h2>Formulário para aplicação | Cargo de professor</h2>
+
+       <div>
+         <label for="nome">Nome completo:</label>
+         <input type="text" id="nome" name="nome" placeholder="Ex:José Henrique da Silva Lima" required>
+       </div>
+
+       <div>
+         <label for="formacao">Formação:</label>
+         <input type="text" id="formacao" name="formacao" placeholder="Ex: Bacharelado " required>
+       </div>
+
+       <div>
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email" placeholder="Ex: ExamplesEmail@hotmail.com" required>
+       </div>
+
+       <div>
+         <label for="materia">Matérias que ensina:</label>
+         <input type="text" id="materia" name="materia" placeholder="Ex: Português | Matemática..." required>
+       </div>
+       
+       <div>
+         <label for="niveldeensino">Nivel de ensino:</label>
+         <input type="text" id="niveldeensino" name="niveldeensino" placeholder="Ex: Supremo" required>
+       </div>
+
+      <div>
+        <label for="comentario">Comente um pouco sobre você:</label>
+        <textarea name="" id="" cols="10" rows="7" placeholder="Eu sou o eu sou..."></textarea>
+      </div>
+
+       <button type="submit" value="Enviar" onclick="Swal.fire({
+        title: 'Formulário enviado!',
+        text: 'Acesse seu perfil depois para ver o resultado da sua solicitação.',
+        icon: 'success',
+        confirmButtonText: 'Okay :D'
+      })">Enviar</button>
+      </form>
+
+    </section>
+
+      
+  </main>
+
+  
+<script src="https://kit.fontawesome.com/a2640589f9.js" crossorigin="anonymous"></script>
+<script src="/main.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+  loadTheme();
+</script>
+</body>
+</html>

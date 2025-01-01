@@ -1,0 +1,60 @@
+<%- include('partials/head') %>
+<title>EXPOTEC - CONTATO</title>
+<link rel="stylesheet" href="/stylesheet/contact.css">
+<%- include('partials/close-head') %>
+
+<body>
+  <%- include("partials/header") %>
+
+  <main>
+
+    <section>
+
+      <div class="info">
+        <span class="location">
+          <i class="fa-solid fa-location-pin"></i>
+          <h3>Endereço</h3>
+          <p>Surubim - PE</p>
+          <p>CEP: 55750-000</p>
+          <p>Avenida Antônio Heráclio do Rego</p>
+        </span>
+
+        <span class="phone">
+          <i class="fa-solid fa-phone"></i>
+          <h3>Telefone</h3>
+          <a href="">(81) 9 8977-4392</a>
+          <a href="">(81) 9 9642-1340</a>
+        </span>
+
+        <span class="email">
+          <i class="fa-solid fa-envelope"></i>
+          <h3>Email</h3>
+          <a target="_blank" href="malito:henrilima.contactme@gmail.com">henrilima.contactme@gmail.com</a>
+          <a target="_blank" href="malito:souzadossantoskeven@gmail.com">souzadossantoskeven@gmail.com</a>
+        </span>
+      </div>
+
+      <span class="list"></span>
+
+      <form action="/sendmail" method="POST">
+        <h2>Nos Envie uma Mensagem</h2>
+        <input type="text" name="authorMessage" id="authorMessage" placeholder="Seu Nome" aria-label="nome">
+        <input type="email" name="userEmail" placeholder="Seu Email"  id="userEmail" aria-label="email">
+        <textarea name="textMessage" id="textMessage" placeholder="Sua Mensagem" cols="30" rows="10" style="resize: none;"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+
+    </section>
+
+  </main>
+
+<script src="https://kit.fontawesome.com/a2640589f9.js" crossorigin="anonymous"></script>
+<script src="/main.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+  loadTheme();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<%- include('partials/head') %>
+<title>EXPOTEC - PROFILE</title>
+<link rel="stylesheet" href="/stylesheet/profile.css">
+<%- include('partials/close-head') %>
+
+<body>
+  <%- include("partials/header") %>
+
+  <main>
+    <div id="sobre">
+      <div id="my-avatar">
+        <img src="<%- user.avatar %>" alt="">
+        <h3>Meu Perfil</h3>
+      </div>
+
+      <div id="user-data">
+        <div>
+          <p><%- user.username %></p>
+          <p>Data de nascimento: 10/04/2004</p>
+          <p>Telefone: 9999-99999 <i class="fa-solid fa-pencil"></i></p>
+          <p>Email: <%- user.email %></p>
+          <p>Série: 3º <i class="fa-solid fa-pencil"></i></p>
+          <p>Gênero: Masculino <i class="fa-solid fa-pencil"></i></p>
+        </div>
+      </div>
+
+      <div id="log-off">
+        <a href="/google/logout">Sair <i class="fa-solid fa-right-from-bracket"></i></a>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="https://kit.fontawesome.com/a2640589f9.js" crossorigin="anonymous"></script>
+  <script src="/main.js"></script>
+  <script>
+    loadTheme();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<%- include('partials/head') %>
+<title>EXPOTEC</title>
+<link rel="stylesheet" href="/stylesheet/home.css">
+<%- include('partials/close-head') %>
+
+<body id="enem-page">
+  <%- include("partials/header") %>
+
+    <section class="materias">
+        <div class="box" onclick="road('portugues')">Português</div>
+        <div class="box" onclick="road('matematica')">Matemática</div>
+        <div class="box" onclick="road('biologia')">Biologia</div>
+        <div class="box" onclick="road('quimica')">Química</div>
+        <div class="box" onclick="road('fisica')">Física</div>
+        <div class="box" onclick="road('historia')">História</div>
+        <div class="box" onclick="road('geografia')">Geografia</div>
+        <div class="box" onclick="road('ingles')">Inglês</div>
+        <div class="box" onclick="road('espanhol')">Espanhol</div>
+    </section>
+
+  <div id="myDiagramDiv"></div>
+
+  <script src="https://kit.fontawesome.com/a2640589f9.js" crossorigin="anonymous"></script>
+  <script src="/main.js"></script>
+  <script>
+    loadTheme();
+  </script>
+  <script src="https://unpkg.com/gojs/release/go.js"></script>
+</body>
+
+</html>

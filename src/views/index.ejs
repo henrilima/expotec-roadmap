@@ -1,0 +1,110 @@
+<%- include('partials/head') %>
+<title>EXPOTEC</title>
+<link rel="stylesheet" href="/stylesheet/home.css">
+<%- include('partials/close-head') %>
+
+<body>
+  <%- include("partials/header") %>
+
+  <main>
+    <section id="home">
+      <div id="start-fluxogram">
+        <span>
+          <h1>Fluxogram,</h1>
+          <p>Um fluxograma completo com conteúdos do ENEM e SSA para você estudar!</p>
+        </span>
+
+        <a href="/">Iniciar fluxo</a>
+      </div>
+
+      <img src="/assets/storyset/up.png" alt="imagem da home section" draggable="false">
+
+    </section>
+
+    <section id="categories">
+
+      <div class="enem">
+        <span>
+          ENEM
+        </span>
+        <div>
+          <h1>Exame Nacional do Ensino Médio</h1>
+          <p>Seu guia Completo para o Enem: Dicas, recursos e orientações para o sucesso.</p>
+          <a href="/enem">Roadmap</a>
+        </div>
+      </div>
+
+      <div class="ssa">
+        <span>
+          SSA
+        </span>
+        <div>
+          <h1>Sistema Seriado de Avaliação</h1>
+          <p>Desbrave o caminho para o sucesso no SSA: O seu guia personalizado de estudos para alcançar
+            resultados
+            brilhante</p>
+          <a href="/">Roadmap</a>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="benefits">
+
+      <div id="cerebro">
+        <img src="/assets/boxies/dark-brain.png" id="brain" alt="cerebro">
+        <span>
+          <h1>Programe Seus Estudos</h1>
+          <p>Aprimore a qualidade de seus Estudos por meio da utilização de nossos mapas mentais</p>
+        </span>
+      </div>
+
+      <div id="folha">
+        <img src="/assets/boxies/dark-paper.png" id="paper" alt="folha">
+        <span>
+          <h1>Prepare-se Para os Vestibulares</h1>
+          <p>Esteja preparado para realizar os exames de seleção tanto do ENEM quanto do SSA.</p>
+        </span>
+      </div>
+
+      <div id="livro">
+        <img src="/assets/boxies/dark-book.png" id="book" alt="livros">
+        <span>
+          <h1>Organize Seus Estudos</h1>
+          <p>Destaque o que já estudou e identifique áreas de dúvida para aprimorar sua aprendizagem</p>
+        </span>
+      </div>
+
+    </section>
+
+    <section id="teacher-container">
+
+      <img src="/assets/storyset/study.png" alt="imagem de um aluno ao lado de uma professora na sala de aula">
+
+      <div id="invite">
+        <span>
+          <h1>
+            CARO PROFESSOR,
+          </h1>
+          <p>
+            caso deseje criar uma conta em nosso site, por gentileza, clique no botão abaixo.
+          </p>
+        </span>
+
+        <a href="/teacher">Cadastre-se</a>
+      </div>
+    </section>
+  </main>
+
+  <%- include('partials/footer') %>
+
+  <script src="https://kit.fontawesome.com/a2640589f9.js" crossorigin="anonymous"></script>
+  <script src="/main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    loadTheme();
+  </script>
+</body>
+
+</html>
